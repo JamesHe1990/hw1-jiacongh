@@ -11,9 +11,9 @@ import org.apache.uima.cas.Type;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Mon Sep 09 15:44:40 EDT 2013
+ * Updated by JCasGen Tue Sep 10 16:32:40 EDT 2013
  * @generated */
-public class TokenTriGramAnnotation_Type extends Annotation_Type {
+public class TokenTriGramAnnotation_Type extends AnnotationBase_Type {
   /** @generated */
   @Override
   protected FSGenerator getFSGenerator() {return fsGenerator;}

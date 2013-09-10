@@ -6,29 +6,49 @@
     <vendor/>
   <types>
     <typeDescription>
-      <name>TokenAnnotation</name>
-      <description/>
-      <supertypeName>uima.tcas.Annotation</supertypeName>
-    </typeDescription>
-    <typeDescription>
       <name>TokenUniGramAnnotation</name>
       <description/>
-      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <supertypeName>AnnotationBase</supertypeName>
     </typeDescription>
     <typeDescription>
       <name>TokenBiGramAnnotation</name>
       <description/>
-      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <supertypeName>AnnotationBase</supertypeName>
     </typeDescription>
     <typeDescription>
       <name>TokenTriGramAnnotation</name>
       <description/>
-      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <supertypeName>AnnotationBase</supertypeName>
     </typeDescription>
     <typeDescription>
       <name>EvaluationAnnotation</name>
       <description/>
       <supertypeName>uima.tcas.Annotation</supertypeName>
+    </typeDescription>
+  <typeDescription>
+      <name>AnnotationBase</name>
+      <description/>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>AnswerAnnotation</name>
+      <description/>
+      <supertypeName>AnnotationBase</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>QuestionAnnotation</name>
+      <description/>
+      <supertypeName>AnnotationBase</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>SentenceAnnotation</name>
+      <description/>
+      <supertypeName>AnnotationBase</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>TokenListAnnotation</name>
+      <description/>
+      <supertypeName>AnnotationBase</supertypeName>
     </typeDescription>
   </types>
 </typeSystemDescription>

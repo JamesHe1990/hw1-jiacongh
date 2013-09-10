@@ -10,10 +10,10 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Mon Sep 09 15:44:40 EDT 2013
- * XML source: F:/eclipse_workplace/hw1-jiacongh/src/main/resources/typeSystemDescriptor.xml
+ * Updated by JCasGen Tue Sep 10 16:32:40 EDT 2013
+ * XML source: C:/Users/James_He/git/hw1-jiacongh/hw1-jiacongh/src/main/resources/typeSystemDescriptor.xml
  * @generated */
-public class TokenUniGramAnnotation extends Annotation {
+public class TokenUniGramAnnotation extends AnnotationBase {
   /** @generated
    * @ordered 
    */
