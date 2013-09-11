@@ -96,7 +96,7 @@
     </dependency>
   </dependencies>
   <scm>
-  	<connection>git@github.com:JamesHe1990/hw1-jiacongh.git</connection>
-  	<developerConnection>git@github.com:JamesHe1990/hw1-jiacongh.git</developerConnection>
+  	<connection>scm:git:git@github.com:JamesHe1990/hw1-jiacongh.git</connection>
+  	<developerConnection>scm:git:git@github.com:JamesHe1990/hw1-jiacongh.git</developerConnection>
   </scm>
 </project>
