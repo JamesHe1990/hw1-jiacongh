@@ -9,8 +9,8 @@ import org.apache.uima.cas.FeatureStructure;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 
-/** 
- * Updated by JCasGen Tue Sep 10 16:32:40 EDT 2013
+/** Annotation for whole answer, use SentenceAnnotation later.
+ * Updated by JCasGen Wed Sep 11 22:05:29 EDT 2013
  * @generated */
 public class AnswerAnnotation_Type extends AnnotationBase_Type {
   /** @generated */

@@ -8,8 +8,8 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
-/** 
- * Updated by JCasGen Tue Sep 10 16:32:40 EDT 2013
+/** Annotate sencetences, use TokenListAnnotation later
+ * Updated by JCasGen Wed Sep 11 22:05:29 EDT 2013
  * XML source: C:/Users/James_He/git/hw1-jiacongh/hw1-jiacongh/src/main/resources/typeSystemDescriptor.xml
  * @generated */
 public class SentenceAnnotation extends AnnotationBase {

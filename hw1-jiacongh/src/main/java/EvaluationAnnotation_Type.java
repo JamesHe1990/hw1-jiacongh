@@ -10,8 +10,8 @@ import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
-/** 
- * Updated by JCasGen Tue Sep 10 16:32:39 EDT 2013
+/** sort the answers according to their scores
+ * Updated by JCasGen Wed Sep 11 22:05:29 EDT 2013
  * @generated */
 public class EvaluationAnnotation_Type extends Annotation_Type {
   /** @generated */

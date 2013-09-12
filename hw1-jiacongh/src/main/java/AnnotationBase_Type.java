@@ -8,10 +8,12 @@ import org.apache.uima.cas.impl.FSGenerator;
 import org.apache.uima.cas.FeatureStructure;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
+import org.apache.uima.cas.impl.FeatureImpl;
+import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Tue Sep 10 16:32:40 EDT 2013
+ * Updated by JCasGen Wed Sep 11 22:05:28 EDT 2013
  * @generated */
 public class AnnotationBase_Type extends Annotation_Type {
   /** @generated */
@@ -43,11 +45,35 @@ public class AnnotationBase_Type extends Annotation_Type {
 
 
 
+  /** @generated */
+  final Feature casFeat_TestElementAnnotation;
+  /** @generated */
+  final int     casFeatCode_TestElementAnnotation;
+  /** @generated */ 
+  public int getTestElementAnnotation(int addr) {
+        if (featOkTst && casFeat_TestElementAnnotation == null)
+      jcas.throwFeatMissing("TestElementAnnotation", "AnnotationBase");
+    return ll_cas.ll_getRefValue(addr, casFeatCode_TestElementAnnotation);
+  }
+  /** @generated */    
+  public void setTestElementAnnotation(int addr, int v) {
+        if (featOkTst && casFeat_TestElementAnnotation == null)
+      jcas.throwFeatMissing("TestElementAnnotation", "AnnotationBase");
+    ll_cas.ll_setRefValue(addr, casFeatCode_TestElementAnnotation, v);}
+    
+  
+
+
+
   /** initialize variables to correspond with Cas Type and Features
 	* @generated */
   public AnnotationBase_Type(JCas jcas, Type casType) {
     super(jcas, casType);
     casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
+
+ 
+    casFeat_TestElementAnnotation = jcas.getRequiredFeatureDE(casType, "TestElementAnnotation", "AnnotationBase", featOkTst);
+    casFeatCode_TestElementAnnotation  = (null == casFeat_TestElementAnnotation) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_TestElementAnnotation).getCode();
 
   }
 }

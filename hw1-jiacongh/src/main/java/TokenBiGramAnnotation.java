@@ -9,11 +9,11 @@ import org.apache.uima.jcas.cas.TOP_Type;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
-/** 
- * Updated by JCasGen Tue Sep 10 16:32:39 EDT 2013
+/** Annotation for BiGram token
+ * Updated by JCasGen Wed Sep 11 22:05:29 EDT 2013
  * XML source: C:/Users/James_He/git/hw1-jiacongh/hw1-jiacongh/src/main/resources/typeSystemDescriptor.xml
  * @generated */
-public class TokenBiGramAnnotation extends AnnotationBase {
+public class TokenBiGramAnnotation extends TokenAnnotation {
   /** @generated
    * @ordered 
    */

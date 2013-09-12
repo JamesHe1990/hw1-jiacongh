@@ -9,8 +9,11 @@ import org.apache.uima.cas.FeatureStructure;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 
+import org.apache.uima.cas.impl.FeatureImpl;
+import org.apache.uima.cas.Feature;
+
 /** 
- * Updated by JCasGen Tue Sep 10 16:32:40 EDT 2013
+ * Updated by JCasGen Wed Sep 11 22:05:29 EDT 2013
  * @generated */
 public class TokenListAnnotation_Type extends AnnotationBase_Type {
   /** @generated */
@@ -42,11 +45,35 @@ public class TokenListAnnotation_Type extends AnnotationBase_Type {
 
 
 
+  /** @generated */
+  final Feature casFeat_ScoreAnnotation;
+  /** @generated */
+  final int     casFeatCode_ScoreAnnotation;
+  /** @generated */ 
+  public int getScoreAnnotation(int addr) {
+        if (featOkTst && casFeat_ScoreAnnotation == null)
+      jcas.throwFeatMissing("ScoreAnnotation", "TokenListAnnotation");
+    return ll_cas.ll_getRefValue(addr, casFeatCode_ScoreAnnotation);
+  }
+  /** @generated */    
+  public void setScoreAnnotation(int addr, int v) {
+        if (featOkTst && casFeat_ScoreAnnotation == null)
+      jcas.throwFeatMissing("ScoreAnnotation", "TokenListAnnotation");
+    ll_cas.ll_setRefValue(addr, casFeatCode_ScoreAnnotation, v);}
+    
+  
+
+
+
   /** initialize variables to correspond with Cas Type and Features
 	* @generated */
   public TokenListAnnotation_Type(JCas jcas, Type casType) {
     super(jcas, casType);
     casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
+
+ 
+    casFeat_ScoreAnnotation = jcas.getRequiredFeatureDE(casType, "ScoreAnnotation", "AnnotationBase", featOkTst);
+    casFeatCode_ScoreAnnotation  = (null == casFeat_ScoreAnnotation) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_ScoreAnnotation).getCode();
 
   }
 }

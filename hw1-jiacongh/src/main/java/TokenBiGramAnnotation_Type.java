@@ -10,10 +10,10 @@ import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
-/** 
- * Updated by JCasGen Tue Sep 10 16:32:40 EDT 2013
+/** Annotation for BiGram token
+ * Updated by JCasGen Wed Sep 11 22:05:29 EDT 2013
  * @generated */
-public class TokenBiGramAnnotation_Type extends AnnotationBase_Type {
+public class TokenBiGramAnnotation_Type extends TokenAnnotation_Type {
   /** @generated */
   @Override
   protected FSGenerator getFSGenerator() {return fsGenerator;}

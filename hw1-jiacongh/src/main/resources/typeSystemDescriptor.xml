@@ -12,27 +12,34 @@
     </typeDescription>
     <typeDescription>
       <name>TokenBiGramAnnotation</name>
-      <description/>
-      <supertypeName>AnnotationBase</supertypeName>
+      <description>Annotation for BiGram token</description>
+      <supertypeName>TokenAnnotation</supertypeName>
     </typeDescription>
     <typeDescription>
       <name>TokenTriGramAnnotation</name>
-      <description/>
-      <supertypeName>AnnotationBase</supertypeName>
+      <description>Annotation for TriGram token</description>
+      <supertypeName>TokenAnnotation</supertypeName>
     </typeDescription>
     <typeDescription>
       <name>EvaluationAnnotation</name>
-      <description/>
+      <description>sort the answers according to their scores</description>
       <supertypeName>uima.tcas.Annotation</supertypeName>
     </typeDescription>
   <typeDescription>
       <name>AnnotationBase</name>
       <description/>
       <supertypeName>uima.tcas.Annotation</supertypeName>
+    <features>
+        <featureDescription>
+          <name>TestElementAnnotation</name>
+          <description>The beginning class when initiated</description>
+          <rangeTypeName>AnnotationBase</rangeTypeName>
+        </featureDescription>
+      </features>
     </typeDescription>
     <typeDescription>
       <name>AnswerAnnotation</name>
-      <description/>
+      <description>Annotation for whole answer, use SentenceAnnotation later.</description>
       <supertypeName>AnnotationBase</supertypeName>
     </typeDescription>
     <typeDescription>
@@ -42,12 +49,24 @@
     </typeDescription>
     <typeDescription>
       <name>SentenceAnnotation</name>
-      <description/>
+      <description>Annotate sencetences, use TokenListAnnotation later</description>
       <supertypeName>AnnotationBase</supertypeName>
     </typeDescription>
     <typeDescription>
       <name>TokenListAnnotation</name>
       <description/>
+      <supertypeName>AnnotationBase</supertypeName>
+    <features>
+        <featureDescription>
+          <name>ScoreAnnotation</name>
+          <description>The system will incorporate a component that will assign an answer score annotation to each answer. The answer score annotation will record the score assigned to the answer.</description>
+          <rangeTypeName>AnnotationBase</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+  <typeDescription>
+      <name>TokenAnnotation</name>
+      <description>Super class of NGramAnnotation</description>
       <supertypeName>AnnotationBase</supertypeName>
     </typeDescription>
   </types>
